@@ -554,6 +554,10 @@ article a {
     text-shadow: 1px 1px #0f1089;
 }
 
+.section-bar .post-title a {
+    color: var(--ui-ht) !important;
+}
+
 .section-bar .faux-button {
     color: var(--ui-ht);
 }
@@ -575,6 +579,11 @@ article .section-bar {
     background: linear-gradient(180deg, #0997ff, #0053ee 8%, #0050ee 40%, #06f 88%, #06f 93%, #005bff 95%, #003dd7 96%, #003dd7);
 
     color: var(--ui-ht);
+}
+
+.thread > section:last-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .section-bar .underline-button {
