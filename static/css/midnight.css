@@ -1376,6 +1376,65 @@ dialog .underline-button:first-child {
     color: var(--ui-cc) !important;
 }
 
+.popup-manage .ad-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+}
+
+.popup-manage .ad-list:has(.ad-item) {
+    padding: 0.5rem 0;
+}
+
+.popup-manage .ad-item {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+
+    padding: 0.5rem 0;
+
+    border-bottom: 0.063rem solid var(--ui-bc);
+}
+
+.popup-manage .ad-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 0.5rem;
+}
+
+.popup-manage .ad-details .input {
+    flex: 1;
+}
+
+.popup-manage .ad-preview {
+    flex: 1;
+
+    aspect-ratio: 880 / 125;
+
+    background-color: var(--ui-c4);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 0.5rem;
+}
+
+.ad-preview-cri {
+    background-image: var(--ad-cri);
+}
+
+.remove-ad:hover {
+    color: var(--ui-u1);
+}
+
+.add-ad {
+    color: var(--ui-ac);
+}
+
 /* Index - Main */
 
 .index article {
