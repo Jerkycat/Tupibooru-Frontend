@@ -13,44 +13,62 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <a href="index_example.html"><img class="header-logo" src="var(--lo-img)" alt="Tupibooru"></a>
-            {% include 'utils/theme-changer.html' %}
-            {% include 'utils/navbar.html' %}
-        </header>
-        <main class="index-main">
-
-            <div class="index-post">
-                <div class="index-title">
-                    Regras Gerais
-                </div>
-                <div class="index-content">
-                    <p>1. Não poste, discuta, solicite ou envie links para conteúdos que violam as leis brasileiras.</p>
-                    <p>2. Siga os temas propostos de cada board, evite discussões políticas e tente ao máximo de sua
-                        capacidade não enviar conteúdo NSFW.</p>
-                    - Conteúdo NSFW erótico, representações de genitálias e/ou mamilos são PROIBIDOS, porém,
-                    representações de nudez não erótica e conteúdo ecchi ainda são permitidos.
-                    <p>3. Conteúdo de qualidade é de grande importância para esta comunidade, posts que não possuem
-                        qualidade intrínseca são desincentivados, isto inclui:</p>
-                    - Copypastas. (Permitido no /bo/ e /jo/) <br>
-                    - Textos indecifráveis. <br>
-                    - Shitposts irônicos. (Permitido no /bo/ e /jo/) <br>
-                    - Spam ou Flood. <br>
-                    - Posts divulgando contas ou servidores do Discord. <br>
-                    - Discussões sobre panelinhas ou pessoas envolvidas. (Você será banido!)
-                    <p>4. Seja legal:</p> <br>
-                    - Ataque ideias, não pessoas.<br>
-                    - Não convoque raids.<br>
-                    - Não compartilhe Dox.<br>
-                    - Não reclame da Staff, nem invente histórias sobre a mesma.
-                </div>
-            </div>
-
-        </main>
-        {% include 'utils/footer.html' %}
-        {% include 'utils/popups.html' %}
-        {% include 'utils/scripts/index-scripts.html' %}
+    {% include 'utils/header.html' %}
+    <main class="index">
+        <article>
+            <section class="section-bar">
+                <div>Regras</div>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <a>1. Não poste, discuta, solicite ou envie links para conteúdos que violam as leis brasileiras.
+                        </a>
+                        <p>Ao postar você garante que todo conteúdo segue a LGPD e o Marco Civil da Internet, marcas
+                            e direitos autorais pertencem aos seus respectivos donos, arquivos enviados são de
+                            responsabilidade do usuário e comentários são propriedade de seus autores.</p>
+                    </li>
+                    <li>
+                        <a>2. Conteúdos e discussões deste site são indicados exclusivamente para maiores de 18
+                            (dezoito) anos.</a>
+                        <p>A entrada e o uso do site por menores de 18 anos são estritamente proibidos e constituem uma
+                            violação desta regra.</p>
+                    </li>
+                    <li>
+                        <a>3. Mantenha-se nos temas propostos de cada board, evite discussões políticas fora do /bo/ e
+                            não envie de material sexualmente explícito fora do /cri/.</a>
+                        <p>- Mantenha-se estritamente nos temas propostos de cada board, Postagens Off-Topic (fora do
+                            tópico) serão removidas. <br> <br>
+                            - Discussões políticas, além de altamente desicentivadas, devem ser
+                            limitadas exclusivamente ao board /bo/. <br> <br>
+                            - Não envie material sexualmente explícito ("Sexualmente explícito" refere-se a
+                            conteúdo que mostra ou descreve atos sexuais reais ou simulados, nudez genital, ou toques
+                            íntimos (genitais, seios, nádegas) com o propósito de excitação, incluindo pornografia,
+                            masturbação, uso de brinquedos sexuais e sexualização de partes do corpo) fora do /cri/,
+                            conteúdo ecchi ainda é permitido.
+                        </p>
+                    </li>
+                    <li>
+                        <a>4. Conteúdo de qualidade é de grande importância para esta comunidade, posts que não possuem
+                            qualidade intrínseca são desincentivados.</a>
+                        <p>Não polua as boards com posts de má vontade, não divulgue servidores do discord nem fale sobe
+                            panelinhas e/ou integrantes delas.
+                        </p>
+                    </li>
+                    <li>
+                        <a>5. Regras de etiqueta.</a>
+                        <p>Seja legal, não seja um cuzão com outras pessoas sem motivo e não espalhe informações,
+                            acontecimentos ou mídias pessoais sem o consentimento alheio, nem reclame da staff ou fique
+                            inventando historinhas, ninguem é pago para lhe aturar e você vai ser banido.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </article>
+    </main>
+    {% include 'utils/footer.html' %}
+    {% include 'utils/popups.html' %}
+    {% include 'utils/scripts/index-scripts.html' %}
 </body>
 
 </html>

@@ -13,22 +13,14 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <a href="index_example.html"><img class="header-logo" src="var(--lo-img)" alt="Tupibooru"></a>
-            {% include 'utils/theme-changer.html' %}
-            {% include 'utils/navbar.html' %}
-        </header>
-        <main class="thread-main">
-            <div class="page-content">
-                {% include 'utils/thread-posts.html' %}
-            </div>
+    {% include 'utils/header.html' %}
+    <main>
+        {% include 'utils/thread-posts.html' %}
+    </main>
 
-            {% include 'utils/new-thread_box.html' %}
-        </main>
-        {% include 'utils/footer.html' %}
-        {% include 'utils/popups.html' %}
-        {% include 'utils/scripts/thread-scripts.html' %}
+    {% include 'utils/footer.html' %}
+    {% include 'utils/popups.html' %}
+    {% include 'utils/scripts/thread-scripts.html' %}
 </body>
 
 </html>

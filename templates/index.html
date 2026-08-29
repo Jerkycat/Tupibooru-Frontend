@@ -13,104 +13,88 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <a href="index_example.html"><img class="header-logo" src="var(--lo-img)" alt="Tupibooru"></a>
-            {% include 'utils/theme-changer.html' %}
-            {% include 'utils/navbar.html' %}
-        </header>
-        <main class="index-main">
-            <div class="index-post">
-                <div class="index-title">
-                    Doações para despesas mensais
-                    <a href="https://ko-fi.com/redepotiguara" target="_blank" class="ko-fi"><button>Doe Aqui!<img
-                                src="../../static/imgs/decoration/ko-fi.png"></button></a>
+    {% include 'utils/header.html' %}
+    <main class="index">
+        <article>
+            <section class="section-bar">
+                <div>Doações para despesas mensais</div>
+                <div>
+                    <a href="https://ko-fi.com/redepotiguara" target="_blank" class="default-button">
+                        Doe Aqui! <img src="../../static/imgs/decoration/ko-fi.png" alt="">
+                    </a>
                 </div>
-                <div class="index-content">Porque hostear um site não é de graça.</div>
-            </div>
+            </section>
+            <section>
+                <p>Porque hostear um site não é de graça.</p>
+            </section>
+        </article>
 
-            <div class="index-post">
-                <div class="index-title">Em Alta</div>
-                <div class="index-content">
-                    <div class="trending">
-                        <div><a class="trending-board" href="">/bo/ - Boteco</a></div>
-                        <a class="trending-content">
-                            <div><img loading="lazy" src="../../static/imgs/decoration/expost1.png" alt=""></div>
-                            <div>
-                                <pre>Este é um post de exemplo.
-Possui um único anexo.Este é um post de exemplo.
-Possui um único anexo.Este é um post de exemplo.
-Possui um único anexo.Este é um post de exemplo.
-Possui um único anexo.Este é um post de exemplo.
-Possui um único anexo.Este é um post de exemplo.
-Possui um único anexo.Este é um post de exemplo.
-Possui um único anexo.Este é um post de exemplo.
+        <article>
+            <section class="section-bar">
+                <div>Em alta</div>
+            </section>
+            <section>
+                <div class="trending">
+                    <a href="board_example.html">/bo/ - Boteco</a>
+                    <a href="thread1_example.html">
+                        <img src="../../static/imgs/examples/expost1.png" alt="">
+                        <p>Título do Post</p>
+                        <pre>Este é um post de exemplo.
 Possui um único anexo.</pre>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="trending">
-                        <div><a class="trending-board" href="">/an/ - Animarias</a></div>
-                        <a class="trending-content">
-                            <div><img loading="lazy" src="../../static/imgs/decoration/expost1.png" alt=""></div>
-                            <div>
-                                <pre>Este é um post de exemplo.
-Possui um único anexo.
-                            </pre>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="trending">
-                        <div><a class="trending-board" href="">/tv/ - Filmes e Séries</a></div>
-                        <a class="trending-content">
-                            <div><img loading="lazy" src="../../static/imgs/decoration/expost1.png" alt=""></div>
-                            <div>
-                                <pre>Este é um post de exemplo.
-Possui um único anexo.
-                            </pre>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="trending">
-                        <div><a class="trending-board" href="">/cri/ - Criações</a></div>
-                        <a class="trending-content">
-                            <div><img loading="lazy" src="../../static/imgs/decoration/expost1.png" alt=""></div>
-                            <div>
-                                <pre>Este é um post de exemplo.
-Possui um único anexo.
-                            </pre>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="trending">
-                        <div><a class="trending-board" href="">/pc/ - Computarias</a></div>
-                        <a class="trending-content">
-                            <div><img loading="lazy" src="../../static/imgs/decoration/expost1.png" alt=""></div>
-                            <div>
-                                <pre>Este é um post de exemplo.
-Possui um único anexo.
-                            </pre>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="trending">
-                        <div><a class="trending-board" href="">/flb/ - Faria Lima Bets</a></div>
-                        <a class="trending-content">
-                            <div><img loading="lazy" src="../../static/imgs/decoration/expost1.png" alt=""></div>
-                            <div>
-                                <pre>Este é um post de exemplo.
-Possui um único anexo.
-                            </pre>
-                            </div>
-                        </a>
-                    </div>
+                    </a>
                 </div>
-            </div>
-
-        </main>
-        {% include 'utils/footer.html' %}
-        {% include 'utils/popups.html' %}
-        {% include 'utils/scripts/index-scripts.html' %}
+                <div class="trending">
+                    <a href="board_example.html">/an/ - Animangá</a>
+                    <a href="thread1_example.html">
+                        <img src="../../static/imgs/examples/expost1.png" alt="">
+                        <p>Título do Post</p>
+                        <pre>Este é um post de exemplo.
+Possui um único anexo.</pre>
+                    </a>
+                </div>
+                <div class="trending">
+                    <a href="board_example.html">/jo/ - Jogos e Cultura</a>
+                    <a href="thread1_example.html">
+                        <img src="../../static/imgs/examples/expost1.png" alt="">
+                        <p>Título do Post</p>
+                        <pre>Este é um post de exemplo.
+Possui um único anexo.</pre>
+                    </a>
+                </div>
+                <div class="trending">
+                   <a href="board_example.html">/cri/ - Criações</a>
+                    <a href="thread1_example.html">
+                        <img src="../../static/imgs/examples/expost1.png" alt="">
+                        <p>Título do Post</p>
+                        <pre>Este é um post de exemplo.
+Possui um único anexo.</pre>
+                    </a>
+                </div>
+                <div class="trending">
+                    <a href="board_example.html">/pc/ - Computarias</a>
+                    <a href="thread1_example.html">
+                        <img src="../../static/imgs/examples/expost1.png" alt="">
+                        <p>Título do Post</p>
+                        <pre>Este é um post de exemplo.
+Possui um único anexo.</pre>
+                    </a>
+                </div>
+                <div class="trending">
+                    <a href="board_example.html">/flb/ - Faria Lima Bets</a>
+                    <a href="thread1_example.html">
+                        <img src="../../static/imgs/examples/expost1.png" alt="">
+                        <p>Título do Post</p>
+                        <pre>Este é um post de exemplo.
+Possui um único anexo.</pre>
+                    </a>
+                </div>
+            </section>
+        </article>
+    </main>
+    
+    {% include 'utils/footer.html' %}
+    {% include 'utils/popups.html' %}
+    {% include 'utils/scripts/index-scripts.html' %}
 </body>
 
 </html>

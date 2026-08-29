@@ -13,31 +13,19 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <a href="index_example.html"><img class="header-logo" src="var(--lo-img)" alt="Tupibooru"></a>
-            {% include 'utils/theme-changer.html' %}
-            {% include 'utils/navbar.html' %}
-        </header>
-        <main class="board-main">
-            <div class="page-content">
-                {% include 'utils/board-ads.html' %}
-                {% include 'utils/board-posts.html' %}
+    {% include 'utils/header.html' %}
+    <main>
+        <div>
+            {% include 'utils/board-ads.html' %}
+            {% include 'utils/board-posts.html' %}
 
-                <div class="pagination-container">
-                    <div class="pagination">
-                        <a class="default-button button-active" data-page="1">1</a>
-                        <a class="default-button" data-page="2">2</a>
-                        <span class="divider">-</span>
-                        <a class="default-button" data-page="20">20</a>
-                    </div>
-                </div>
-            </div>
-
-        </main>
-        {% include 'utils/footer.html' %}
-        {% include 'utils/popups.html' %}
-        {% include 'utils/scripts/board-scripts.html' %}
+            {% include 'utils/pagination.html' %}
+        </div>
+        {% include 'utils/sidebar.html' %}
+    </main>
+    {% include 'utils/footer.html' %}
+    {% include 'utils/popups.html' %}
+    {% include 'utils/scripts/board-scripts.html' %}
 </body>
 
 </html>
